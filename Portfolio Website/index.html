@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Roboto:wght@400;700&family=Spicy+Rice&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="/photos/profile pic.jpg" alt="Venera Nikolaeva" class="profile-photo" />
+            <h1>Venera Nikolaeva</h1>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="#about me">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>A Developer in the Making: Transforming Ideas into Web Reality!</h2>
+            <p>Finding beauty in code and functionality.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <div class="section-container">
+        <section id="about me">
+            <div class="container">
+                <h2><i class="fas fa-user"></i> About Me</h2>
+                <p>I am a budding web developer excited about creating beautiful and responsive websites!</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2><i class="fas fa-laptop-code"></i> My Skills</h2>
+                <ul id="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2><i class="fas fa-folder-open"></i> Projects</h2>
+                <div class="project" data-description="This is Project 1 description.">
+                    <h3>Travel Website</h3>
+                    <p>TravelWizz: Discover Your Next Adventure</p>
+                    <button class="view-more"><a href="project1.html" style="color: white; text-decoration: none;">View More</a></button>
+                </div>
+                <div class="project" data-description="This is Project 2 description.">
+                    <h3>Restaurant Website</h3>
+                    <p>Gary Blue's Diner: Where Flavor Meets Comfort</p>
+                    <button class="view-more"><a href="project2.html" style="color: white; text-decoration: none;">View More</a></button>
+                </div>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span id="close" class="close">&times;</span>
+                    <h4 id="modal-title"></h4>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="color-picker" class="section-container">
+        <div class="container">
+            <h2><i class="fas fa-palette"></i> Color Picker</h2>
+            <input type="color" id="colorInput" value="#EDE8F5" /> 
+            <p>Pick a color to change the background!</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+            <p>Email: venera_nikolaeva@yahoo.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Venera Nikolaeva</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
